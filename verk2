@@ -1,0 +1,11 @@
+var john = {
+  nafn: "John Jacobs", 
+  kennitala: "0303006725",
+  heimilisfang: "john.Jacobs@rafpostur.is",
+  simar: ["553-1234","899-1234"]
+};
+
+
+for (variable in john) {
+  console.log(`${variable} = ${john[variable]}`);
+};
