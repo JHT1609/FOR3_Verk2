@@ -1,0 +1,122 @@
+1.
+Komdu með kóðadæmi sem sprengir staflann (e. stack overflow).
+
+2.
+Notaðu  filter aðferðin með fylkinu tolur og birtu tölur í console sem eru stærri en 10 en minni en 50.
+    let tolur = [12, 92, 4, 14]; 
+
+3.
+Útskýrðu eftirfarandi kóða línu fyrir línu útfrá raunkeyrslu (e. runtime) JavaScript þýðandans (Hvað er keyrt fyrst og hvað gerir sá kóði, hvað gerist svo næst osfrv.)
+
+function a(callBack){     
+  callBack(); 
+} 
+function b(){     
+  console.log('Hello world!'); 
+} 
+a(b);
+
+4.
+Hvað er e og e.target í kóðanum?
+
+function checkUsername(e) {
+     let  target = e.target; 
+} 
+var el = document.getElementById('username'); 
+el.addEventListener('blur', checkUsername, false);
+
+5.
+Hvað birtist í console?
+
+function f() {
+          let a = '1';    
+          var b = 2;   
+    }
+console.log(a + b);
+
+6.
+Búðu til object sem geymir upplýsingar um hótel og aðferð.
+
+nafn
+fjöldi herbergja
+fjöldi herbergja bókuð
+er sundlaug (já/nei)
+aðferð sem skilar fjöldi lausra herbergja 
+
+7.
+Hvað birtist í console?
+
+    Math.PI; 
+    const PI = 3.141592653589793;
+    const mathConstants = {   
+        "Euler": 2.7182818284, 
+        "Pythagoras": PI
+    }
+    mathConstants.Euler = 2.7;
+    console.log(mathConstants.Euler);
+
+8.
+Hvað þýðir það að hafa false í Event Listener? 
+
+elUsername.addEventListener('blur' , function() {
+ checkUsername(5); 
+}, false)
+
+    
+9.
+Notaðu smið ( e. function constructor ) sem geymir upplýsingar um þig; nafn, kennitala, heimilisfang og tvö netföng. Netföngin eiga að vera í fylki.
+
+Bættu við aðferð getName með prototype sem skilar nafni.(2%)
+
+10.
+Búðu til klasa (class) User sem hefur nafn og netfang. Klasinn hefur einnig get og set aðferð fyrir nafn.
+
+11.
+Hvaða gildi birtist í console?
+
+    let x = 150;
+    if ( x > 100 ) {
+        let x = 1;
+    }
+    console.log(x); 
+
+12.
+Hvað birtist í console?
+
+let area = ( function () { 
+                 let width = 3;
+                 let height = 2;
+                 return width * height; 
+            } )();
+
+area;
+
+13.
+Hvað birtist?
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+
+14.
+Afhverju er getElementById() fljótleglegasta aðferðin?
+
+15.
+Búðu til object sem geymir upplýsingar um þig; nafn, kennitala, heimilisfang og netfang.
+
+16.
+Skrifaðu kóðann fyrir eftirfarandi DOM tré (sjá mynd)  e. text og e. attribute  má vera tómt.
+
+17.
+Hvað er úttakið?
+
+
+let width = 600;
+const shape = {width:300};
+let showWidth = function() {
+     console.log(this.width);
+}
+shape.getWidth = showWidth;
+shape.getWidth();
